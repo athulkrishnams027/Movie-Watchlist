@@ -7,13 +7,13 @@ import AddUser from './pages/AddUser';
 import EditUser from './pages/EditUser';
 import './App.css';
 
-function App() {
+function App() { 
   
   const [users, setUsers] = useState([]);
 
   return (
     <>
-      <AppNavbar />
+      {/* <AppNavbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/users" element={<UserList users={users} setUsers={setUsers} />} />
